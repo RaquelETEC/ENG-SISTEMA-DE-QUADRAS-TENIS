@@ -45,7 +45,7 @@ namespace LOGINCOMBF
 
             mConn.Open();
 
-
+            //TESTE ALO GIT
             MySqlCommand comando = new MySqlCommand("select * from USUARIO where LOGIN= '" + textBox1_LOGIN.Text + "' and SENHA= '" + textBox2_SENHA.Text + "';", mConn);
             comando.ExecuteNonQuery();
             DataTable dt = new DataTable();
