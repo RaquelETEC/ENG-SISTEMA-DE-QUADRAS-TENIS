@@ -16,5 +16,16 @@ namespace LOGINCOMBF
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            VisualizaUsuario VisUS = new VisualizaUsuario();
+            VisUS.Show();
+        }
     }
 }

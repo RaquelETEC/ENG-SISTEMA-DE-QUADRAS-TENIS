@@ -57,15 +57,14 @@ namespace LOGINCOMBF
       
                 if (i > 0)
                 {
-                    MessageBox.Show("Login válido");
-                    this.Dispose();
-                }
+                Form2 f = new Form2();
+                this.Hide();
+                f.Show();
+            }
                 else
                 {
                     MessageBox.Show("Login inválido");
-                    this.Dispose();
-
-                }
+            }
 
                 mConn.Close();
            
