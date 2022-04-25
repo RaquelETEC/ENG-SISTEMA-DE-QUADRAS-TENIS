@@ -13,9 +13,6 @@ namespace LOGINCOMBF
 {
     public partial class Cad_Usuario : Form
     {
-
-         
-
         public Cad_Usuario()
         {
             InitializeComponent();
@@ -23,52 +20,40 @@ namespace LOGINCOMBF
 
         private void button2_Click(object sender, EventArgs e)
         {
-            VisualizaUsuario VisUS = new VisualizaUsuario();
-            VisUS.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+           try
         {
-             try
+            if (Txt_Nome.Text == "" || txt_senha.Text == "" || listBox1.Text == "" || listBox2.Text == "")
             {
-                if (Txt_Nome.Text == "" || txt_senha.Text == "" || listBox1.Text == "" || listBox2.Text == "")
-                {
-                    MessageBox.Show("PREENCHA TODOS OD CAMPOS", "messagem",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                   MySqlConnection mConn = new
-                   MySqlConnection("server=localhost;database=sistema;uid=root;pwd=1234");
-
-                    mConn.Open();
-
-                    //TESTE ALO GIT
-                    MySqlCommand comando = new MySqlCommand(
-                        "INSERT INTO USUARIO (LOGIN,SENHA,FUNCAO,BLOQUEADO)" +
-                        "VALUES ('" + Txt_Nome.Text + "','" + txt_senha.Text + "','"+ listBox1.Text +"','"+ listBox2.Text +"');", mConn);
-
-                    comando.ExecuteReader();
-
-                    MessageBox.Show("USUARIO CADASTRADO!", "messagem",
-                               MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    mConn.Close();
-                    this.Hide();
-                }
+                MessageBox.Show("PREENCHA TODOS OD CAMPOS", "messagem",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception )
+            else
             {
-                MessageBox.Show("ALGO DEU ERRADO", "messagem",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-           
-          
-        }
+               MySqlConnection mConn = new
+               MySqlConnection("server=localhost;database=sistema;uid=root;pwd=1234");
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
+                mConn.Open();
 
+                //TESTE ALO GIT
+                MySqlCommand comando = new MySqlCommand(
+                    "INSERT INTO USUARIO (LOGIN,SENHA,FUNCAO,BLOQUEADO)" +
+                    "VALUES ('" + Txt_Nome.Text + "','" + txt_senha.Text + "','"+ listBox1.Text +"','"+ listBox2.Text +"');", mConn);
+
+                comando.ExecuteReader();
+                
+            MessageBox.Show("USUARIO CADASTRADO!", "messagem",
+                       MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            
+              }
+          }
+          catch (Exception )
+          {
+              MessageBox.Show("ALGO DEU ERRADO", "messagem",
+                              MessageBoxButtons.OK, MessageBoxIcon.Error);
+          }
+
+    
         }
     }
 }
