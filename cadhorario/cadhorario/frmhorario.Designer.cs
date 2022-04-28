@@ -1,6 +1,6 @@
 ﻿namespace cadhorario
 {
-    partial class Form1
+    partial class frmhorario
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -104,7 +104,7 @@
             ds_horaLabel.Name = "ds_horaLabel";
             ds_horaLabel.Size = new System.Drawing.Size(126, 15);
             ds_horaLabel.TabIndex = 7;
-            ds_horaLabel.Text = "Horario disponivel:";
+            ds_horaLabel.Text = "Horário disponivel:";
             // 
             // ds_dataLabel
             // 
@@ -324,7 +324,7 @@
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "ds_hora";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Horario disponivel";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Horário disponivel";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Width = 250;
@@ -337,7 +337,7 @@
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             this.dataGridViewTextBoxColumn5.Width = 250;
             // 
-            // Form1
+            // frmhorario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -358,7 +358,7 @@
             this.Controls.Add(ds_dataLabel);
             this.Controls.Add(this.ds_dataDateTimePicker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "frmhorario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "frmcadhorario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

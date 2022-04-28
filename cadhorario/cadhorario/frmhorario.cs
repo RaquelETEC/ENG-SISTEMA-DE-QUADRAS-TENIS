@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace cadhorario
 {
-    public partial class Form1 : Form
+    public partial class frmhorario : Form
     {
-        public Form1()
+        public frmhorario()
         {
             InitializeComponent();
         }
