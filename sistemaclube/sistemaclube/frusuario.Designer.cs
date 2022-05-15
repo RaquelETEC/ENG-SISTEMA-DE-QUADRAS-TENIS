@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label iD_USUARIOLabel;
             System.Windows.Forms.Label lOGINLabel;
             System.Windows.Forms.Label sENHALabel;
             System.Windows.Forms.Label fUNCAOLabel;
@@ -52,7 +51,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.usuarioBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.iD_USUARIOTextBox = new System.Windows.Forms.TextBox();
             this.lOGINTextBox = new System.Windows.Forms.TextBox();
             this.sENHATextBox = new System.Windows.Forms.TextBox();
             this.fUNCAOComboBox = new System.Windows.Forms.ComboBox();
@@ -68,7 +66,6 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            iD_USUARIOLabel = new System.Windows.Forms.Label();
             lOGINLabel = new System.Windows.Forms.Label();
             sENHALabel = new System.Windows.Forms.Label();
             fUNCAOLabel = new System.Windows.Forms.Label();
@@ -80,50 +77,55 @@
             ((System.ComponentModel.ISupportInitialize)(this.usuarioDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // iD_USUARIOLabel
-            // 
-            iD_USUARIOLabel.AutoSize = true;
-            iD_USUARIOLabel.Location = new System.Drawing.Point(42, 31);
-            iD_USUARIOLabel.Name = "iD_USUARIOLabel";
-            iD_USUARIOLabel.Size = new System.Drawing.Size(73, 13);
-            iD_USUARIOLabel.TabIndex = 1;
-            iD_USUARIOLabel.Text = "ID USUARIO:";
-            // 
             // lOGINLabel
             // 
             lOGINLabel.AutoSize = true;
-            lOGINLabel.Location = new System.Drawing.Point(42, 74);
+            lOGINLabel.BackColor = System.Drawing.Color.Transparent;
+            lOGINLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            lOGINLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lOGINLabel.ForeColor = System.Drawing.Color.White;
+            lOGINLabel.Location = new System.Drawing.Point(39, 39);
             lOGINLabel.Name = "lOGINLabel";
-            lOGINLabel.Size = new System.Drawing.Size(43, 13);
+            lOGINLabel.Size = new System.Drawing.Size(51, 15);
             lOGINLabel.TabIndex = 3;
-            lOGINLabel.Text = "LOGIN:";
+            lOGINLabel.Text = "E-mail:";
             // 
             // sENHALabel
             // 
             sENHALabel.AutoSize = true;
-            sENHALabel.Location = new System.Drawing.Point(42, 118);
+            sENHALabel.BackColor = System.Drawing.Color.Transparent;
+            sENHALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            sENHALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            sENHALabel.ForeColor = System.Drawing.Color.White;
+            sENHALabel.Location = new System.Drawing.Point(39, 83);
             sENHALabel.Name = "sENHALabel";
-            sENHALabel.Size = new System.Drawing.Size(47, 13);
+            sENHALabel.Size = new System.Drawing.Size(48, 15);
             sENHALabel.TabIndex = 5;
-            sENHALabel.Text = "SENHA:";
+            sENHALabel.Text = "Senha:";
             // 
             // fUNCAOLabel
             // 
             fUNCAOLabel.AutoSize = true;
-            fUNCAOLabel.Location = new System.Drawing.Point(42, 207);
+            fUNCAOLabel.BackColor = System.Drawing.Color.Transparent;
+            fUNCAOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            fUNCAOLabel.ForeColor = System.Drawing.Color.White;
+            fUNCAOLabel.Location = new System.Drawing.Point(39, 172);
             fUNCAOLabel.Name = "fUNCAOLabel";
-            fUNCAOLabel.Size = new System.Drawing.Size(54, 13);
+            fUNCAOLabel.Size = new System.Drawing.Size(56, 15);
             fUNCAOLabel.TabIndex = 9;
-            fUNCAOLabel.Text = "FUNCAO:";
+            fUNCAOLabel.Text = "Função:";
             // 
             // bLOQUEADOLabel
             // 
             bLOQUEADOLabel.AutoSize = true;
-            bLOQUEADOLabel.Location = new System.Drawing.Point(42, 163);
+            bLOQUEADOLabel.BackColor = System.Drawing.Color.Transparent;
+            bLOQUEADOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            bLOQUEADOLabel.ForeColor = System.Drawing.Color.White;
+            bLOQUEADOLabel.Location = new System.Drawing.Point(39, 128);
             bLOQUEADOLabel.Name = "bLOQUEADOLabel";
-            bLOQUEADOLabel.Size = new System.Drawing.Size(77, 13);
+            bLOQUEADOLabel.Size = new System.Drawing.Size(77, 15);
             bLOQUEADOLabel.TabIndex = 10;
-            bLOQUEADOLabel.Text = "BLOQUEADO:";
+            bLOQUEADOLabel.Text = "Bloqueado:";
             // 
             // sistemaDataSet
             // 
@@ -272,18 +274,10 @@
             this.usuarioBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.usuarioBindingNavigatorSaveItem.Click += new System.EventHandler(this.usuarioBindingNavigatorSaveItem_Click);
             // 
-            // iD_USUARIOTextBox
-            // 
-            this.iD_USUARIOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "ID_USUARIO", true));
-            this.iD_USUARIOTextBox.Location = new System.Drawing.Point(125, 28);
-            this.iD_USUARIOTextBox.Name = "iD_USUARIOTextBox";
-            this.iD_USUARIOTextBox.Size = new System.Drawing.Size(121, 20);
-            this.iD_USUARIOTextBox.TabIndex = 2;
-            // 
             // lOGINTextBox
             // 
             this.lOGINTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "LOGIN", true));
-            this.lOGINTextBox.Location = new System.Drawing.Point(125, 71);
+            this.lOGINTextBox.Location = new System.Drawing.Point(135, 37);
             this.lOGINTextBox.Name = "lOGINTextBox";
             this.lOGINTextBox.Size = new System.Drawing.Size(547, 20);
             this.lOGINTextBox.TabIndex = 4;
@@ -291,7 +285,7 @@
             // sENHATextBox
             // 
             this.sENHATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "SENHA", true));
-            this.sENHATextBox.Location = new System.Drawing.Point(125, 115);
+            this.sENHATextBox.Location = new System.Drawing.Point(135, 83);
             this.sENHATextBox.Name = "sENHATextBox";
             this.sENHATextBox.Size = new System.Drawing.Size(121, 20);
             this.sENHATextBox.TabIndex = 6;
@@ -304,7 +298,7 @@
             "Adiministrador(a)",
             "Zelador(a)",
             "Usuario"});
-            this.fUNCAOComboBox.Location = new System.Drawing.Point(125, 204);
+            this.fUNCAOComboBox.Location = new System.Drawing.Point(135, 170);
             this.fUNCAOComboBox.Name = "fUNCAOComboBox";
             this.fUNCAOComboBox.Size = new System.Drawing.Size(121, 21);
             this.fUNCAOComboBox.TabIndex = 10;
@@ -316,7 +310,7 @@
             this.bLOQUEADOComboBox.Items.AddRange(new object[] {
             "S",
             "N"});
-            this.bLOQUEADOComboBox.Location = new System.Drawing.Point(125, 160);
+            this.bLOQUEADOComboBox.Location = new System.Drawing.Point(135, 125);
             this.bLOQUEADOComboBox.Name = "bLOQUEADOComboBox";
             this.bLOQUEADOComboBox.Size = new System.Drawing.Size(121, 21);
             this.bLOQUEADOComboBox.TabIndex = 11;
@@ -334,6 +328,7 @@
             this.btsair2.TabIndex = 28;
             this.btsair2.Text = "X";
             this.btsair2.UseVisualStyleBackColor = false;
+            this.btsair2.Click += new System.EventHandler(this.btsair2_Click);
             // 
             // btexcluir
             // 
@@ -349,6 +344,7 @@
             this.btexcluir.TabIndex = 27;
             this.btexcluir.Text = "Excluir";
             this.btexcluir.UseVisualStyleBackColor = false;
+            this.btexcluir.Click += new System.EventHandler(this.btexcluir_Click);
             // 
             // btcancelar
             // 
@@ -364,6 +360,7 @@
             this.btcancelar.TabIndex = 26;
             this.btcancelar.Text = "Cancelar";
             this.btcancelar.UseVisualStyleBackColor = false;
+            this.btcancelar.Click += new System.EventHandler(this.btcancelar_Click);
             // 
             // btsalvar
             // 
@@ -379,6 +376,7 @@
             this.btsalvar.TabIndex = 25;
             this.btsalvar.Text = "Salvar";
             this.btsalvar.UseVisualStyleBackColor = false;
+            this.btsalvar.Click += new System.EventHandler(this.btsalvar_Click);
             // 
             // btinserir
             // 
@@ -394,6 +392,7 @@
             this.btinserir.TabIndex = 24;
             this.btinserir.Text = "Inserir";
             this.btinserir.UseVisualStyleBackColor = false;
+            this.btinserir.Click += new System.EventHandler(this.btinserir_Click);
             // 
             // usuarioDataGridView
             // 
@@ -417,35 +416,35 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_USUARIO";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID_USUARIO";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "LOGIN";
-            this.dataGridViewTextBoxColumn2.HeaderText = "LOGIN";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Login";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "SENHA";
-            this.dataGridViewTextBoxColumn3.HeaderText = "SENHA";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Senha";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "BLOQUEADO";
-            this.dataGridViewTextBoxColumn4.HeaderText = "BLOQUEADO";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Bloqueado";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "FUNCAO";
-            this.dataGridViewTextBoxColumn5.HeaderText = "FUNCAO";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Função";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
@@ -463,8 +462,6 @@
             this.Controls.Add(this.btinserir);
             this.Controls.Add(bLOQUEADOLabel);
             this.Controls.Add(this.bLOQUEADOComboBox);
-            this.Controls.Add(iD_USUARIOLabel);
-            this.Controls.Add(this.iD_USUARIOTextBox);
             this.Controls.Add(lOGINLabel);
             this.Controls.Add(this.lOGINTextBox);
             this.Controls.Add(sENHALabel);
@@ -507,7 +504,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton usuarioBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox iD_USUARIOTextBox;
         private System.Windows.Forms.TextBox lOGINTextBox;
         private System.Windows.Forms.TextBox sENHATextBox;
         private System.Windows.Forms.ComboBox fUNCAOComboBox;

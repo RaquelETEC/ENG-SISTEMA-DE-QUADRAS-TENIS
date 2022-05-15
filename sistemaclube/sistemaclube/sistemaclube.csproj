@@ -57,11 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controle.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="frlogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frlogin.Designer.cs">
+      <DependentUpon>frlogin.cs</DependentUpon>
     </Compile>
     <Compile Include="fradm.cs">
       <SubType>Form</SubType>
@@ -100,8 +100,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>sistemaDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frlogin.resx">
+      <DependentUpon>frlogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fradm.resx">
       <DependentUpon>fradm.cs</DependentUpon>

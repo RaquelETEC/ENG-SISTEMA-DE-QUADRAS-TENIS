@@ -16,5 +16,16 @@ namespace sistemaclube
         {
             InitializeComponent();
         }
+
+        private void bt_reserva_Click(object sender, EventArgs e)
+        {
+            if (controle.formreserva == null)
+            {
+                controle.formreserva = new frreserva();
+                this.Hide();
+                controle.formreserva.Show();
+                controle.formreserva.Focus();
+            }
+        }
     }
 }
