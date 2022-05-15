@@ -28,18 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bt_reserva = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // bt_reserva
-            // 
-            this.bt_reserva.Location = new System.Drawing.Point(840, 13);
-            this.bt_reserva.Name = "bt_reserva";
-            this.bt_reserva.Size = new System.Drawing.Size(122, 23);
-            this.bt_reserva.TabIndex = 0;
-            this.bt_reserva.Text = "reserva de quadras";
-            this.bt_reserva.UseVisualStyleBackColor = true;
-            this.bt_reserva.Click += new System.EventHandler(this.bt_reserva_Click);
             // 
             // frzelador
             // 
@@ -47,7 +36,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.clube_4;
             this.ClientSize = new System.Drawing.Size(1300, 633);
-            this.Controls.Add(this.bt_reserva);
             this.Name = "frzelador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Clube de tênis";
@@ -57,7 +45,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button bt_reserva;
     }
 }
