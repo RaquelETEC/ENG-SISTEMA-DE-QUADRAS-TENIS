@@ -294,7 +294,16 @@
               <Mapping SourceColumn="COMPARECEU" DataSetColumn="COMPARECEU" />
               <Mapping SourceColumn="TIPO_RESERVA" DataSetColumn="TIPO_RESERVA" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="sistemaConnectionString (Settings)" DbObjectName="sistema.reserva" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_RESERVA, NOME_CLIENTE, CPF_CLIENTE, TELEFONE_CLIENTE, DIA, PAGAMENTO, VALOR, STATUS_PAG, NUM_QUADRA, HORA_INICIO, HORA_FIM, HORA_CHEGADA, HORA_SAIDA, COMPARECEU, TIPO_RESERVA FROM reserva</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="usuarioTableAdapter" GeneratorDataComponentClassName="usuarioTableAdapter" Name="usuario" UserDataComponentName="usuarioTableAdapter">
             <MainSource>
@@ -363,7 +372,7 @@
   <xs:element name="sistemaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="sistemaDataSet" msprop:Generator_UserDSName="sistemaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="cad_quadra" msprop:Generator_TableClassName="cad_quadraDataTable" msprop:Generator_TableVarName="tablecad_quadra" msprop:Generator_TablePropName="cad_quadra" msprop:Generator_RowDeletingName="cad_quadraRowDeleting" msprop:Generator_RowChangingName="cad_quadraRowChanging" msprop:Generator_RowEvHandlerName="cad_quadraRowChangeEventHandler" msprop:Generator_RowDeletedName="cad_quadraRowDeleted" msprop:Generator_UserTableName="cad_quadra" msprop:Generator_RowChangedName="cad_quadraRowChanged" msprop:Generator_RowEvArgName="cad_quadraRowChangeEvent" msprop:Generator_RowClassName="cad_quadraRow">
+        <xs:element name="cad_quadra" msprop:Generator_TableClassName="cad_quadraDataTable" msprop:Generator_TableVarName="tablecad_quadra" msprop:Generator_RowChangedName="cad_quadraRowChanged" msprop:Generator_TablePropName="cad_quadra" msprop:Generator_RowDeletingName="cad_quadraRowDeleting" msprop:Generator_RowChangingName="cad_quadraRowChanging" msprop:Generator_RowEvHandlerName="cad_quadraRowChangeEventHandler" msprop:Generator_RowDeletedName="cad_quadraRowDeleted" msprop:Generator_RowClassName="cad_quadraRow" msprop:Generator_UserTableName="cad_quadra" msprop:Generator_RowEvArgName="cad_quadraRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_QUADRA" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID_QUADRA" msprop:Generator_ColumnPropNameInRow="ID_QUADRA" msprop:Generator_ColumnPropNameInTable="ID_QUADRAColumn" msprop:Generator_UserColumnName="ID_QUADRA" type="xs:short" />
@@ -407,7 +416,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="horarios" msprop:Generator_TableClassName="horariosDataTable" msprop:Generator_TableVarName="tablehorarios" msprop:Generator_TablePropName="horarios" msprop:Generator_RowDeletingName="horariosRowDeleting" msprop:Generator_RowChangingName="horariosRowChanging" msprop:Generator_RowEvHandlerName="horariosRowChangeEventHandler" msprop:Generator_RowDeletedName="horariosRowDeleted" msprop:Generator_UserTableName="horarios" msprop:Generator_RowChangedName="horariosRowChanged" msprop:Generator_RowEvArgName="horariosRowChangeEvent" msprop:Generator_RowClassName="horariosRow">
+        <xs:element name="horarios" msprop:Generator_TableClassName="horariosDataTable" msprop:Generator_TableVarName="tablehorarios" msprop:Generator_RowChangedName="horariosRowChanged" msprop:Generator_TablePropName="horarios" msprop:Generator_RowDeletingName="horariosRowDeleting" msprop:Generator_RowChangingName="horariosRowChanging" msprop:Generator_RowEvHandlerName="horariosRowChangeEventHandler" msprop:Generator_RowDeletedName="horariosRowDeleted" msprop:Generator_RowClassName="horariosRow" msprop:Generator_UserTableName="horarios" msprop:Generator_RowEvArgName="horariosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_HORARIO" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_HORARIO" msprop:Generator_ColumnPropNameInRow="ID_HORARIO" msprop:Generator_ColumnPropNameInTable="ID_HORARIOColumn" msprop:Generator_UserColumnName="ID_HORARIO" type="xs:short" />
@@ -425,7 +434,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="reserva" msprop:Generator_TableClassName="reservaDataTable" msprop:Generator_TableVarName="tablereserva" msprop:Generator_TablePropName="reserva" msprop:Generator_RowDeletingName="reservaRowDeleting" msprop:Generator_RowChangingName="reservaRowChanging" msprop:Generator_RowEvHandlerName="reservaRowChangeEventHandler" msprop:Generator_RowDeletedName="reservaRowDeleted" msprop:Generator_UserTableName="reserva" msprop:Generator_RowChangedName="reservaRowChanged" msprop:Generator_RowEvArgName="reservaRowChangeEvent" msprop:Generator_RowClassName="reservaRow">
+        <xs:element name="reserva" msprop:Generator_TableClassName="reservaDataTable" msprop:Generator_TableVarName="tablereserva" msprop:Generator_RowChangedName="reservaRowChanged" msprop:Generator_TablePropName="reserva" msprop:Generator_RowDeletingName="reservaRowDeleting" msprop:Generator_RowChangingName="reservaRowChanging" msprop:Generator_RowEvHandlerName="reservaRowChangeEventHandler" msprop:Generator_RowDeletedName="reservaRowDeleted" msprop:Generator_RowClassName="reservaRow" msprop:Generator_UserTableName="reserva" msprop:Generator_RowEvArgName="reservaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_RESERVA" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID_RESERVA" msprop:Generator_ColumnPropNameInRow="ID_RESERVA" msprop:Generator_ColumnPropNameInTable="ID_RESERVAColumn" msprop:Generator_UserColumnName="ID_RESERVA" type="xs:short" />
@@ -494,7 +503,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="usuario" msprop:Generator_TableClassName="usuarioDataTable" msprop:Generator_TableVarName="tableusuario" msprop:Generator_TablePropName="usuario" msprop:Generator_RowDeletingName="usuarioRowDeleting" msprop:Generator_RowChangingName="usuarioRowChanging" msprop:Generator_RowEvHandlerName="usuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="usuarioRowDeleted" msprop:Generator_UserTableName="usuario" msprop:Generator_RowChangedName="usuarioRowChanged" msprop:Generator_RowEvArgName="usuarioRowChangeEvent" msprop:Generator_RowClassName="usuarioRow">
+        <xs:element name="usuario" msprop:Generator_TableClassName="usuarioDataTable" msprop:Generator_TableVarName="tableusuario" msprop:Generator_RowChangedName="usuarioRowChanged" msprop:Generator_TablePropName="usuario" msprop:Generator_RowDeletingName="usuarioRowDeleting" msprop:Generator_RowChangingName="usuarioRowChanging" msprop:Generator_RowEvHandlerName="usuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="usuarioRowDeleted" msprop:Generator_RowClassName="usuarioRow" msprop:Generator_UserTableName="usuario" msprop:Generator_RowEvArgName="usuarioRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_USUARIO" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID_USUARIO" msprop:Generator_ColumnPropNameInRow="ID_USUARIO" msprop:Generator_ColumnPropNameInTable="ID_USUARIOColumn" msprop:Generator_UserColumnName="ID_USUARIO" type="xs:short" />

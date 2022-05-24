@@ -66,6 +66,17 @@ namespace sistemaclube
             this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
             MessageBox.Show("Reserva excluida com sucesso!", "Reserva de quardas", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (controle.formzelador == null)
+            {
+                controle.formzelador = new frzelador();
+                this.Hide();
+                controle.formzelador.Show();
+                controle.formzelador.Focus();
+            }
+        }
     }
-    
+
 }

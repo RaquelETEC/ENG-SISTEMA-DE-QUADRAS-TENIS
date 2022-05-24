@@ -61,7 +61,6 @@
             this.btcancelar = new System.Windows.Forms.Button();
             this.btsalvar = new System.Windows.Forms.Button();
             this.btinserir = new System.Windows.Forms.Button();
-            this.bt_voltar = new System.Windows.Forms.Button();
             nUM_QUADRALabel = new System.Windows.Forms.Label();
             nOME_QUADRALabel = new System.Windows.Forms.Label();
             cOBERTALabel = new System.Windows.Forms.Label();
@@ -425,27 +424,12 @@
             this.btinserir.UseVisualStyleBackColor = false;
             this.btinserir.Click += new System.EventHandler(this.btinserir_Click);
             // 
-            // bt_voltar
-            // 
-            this.bt_voltar.BackColor = System.Drawing.Color.Blue;
-            this.bt_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_voltar.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_voltar.ForeColor = System.Drawing.Color.SeaShell;
-            this.bt_voltar.Location = new System.Drawing.Point(1291, 6);
-            this.bt_voltar.Name = "bt_voltar";
-            this.bt_voltar.Size = new System.Drawing.Size(28, 23);
-            this.bt_voltar.TabIndex = 24;
-            this.bt_voltar.Text = "<-";
-            this.bt_voltar.UseVisualStyleBackColor = false;
-            this.bt_voltar.Click += new System.EventHandler(this.bt_voltar_Click);
-            // 
             // Frcadquad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
             this.ClientSize = new System.Drawing.Size(1366, 719);
-            this.Controls.Add(this.bt_voltar);
             this.Controls.Add(this.btsair2);
             this.Controls.Add(this.btexcluir);
             this.Controls.Add(this.btcancelar);
@@ -506,6 +490,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.Button bt_voltar;
     }
 }

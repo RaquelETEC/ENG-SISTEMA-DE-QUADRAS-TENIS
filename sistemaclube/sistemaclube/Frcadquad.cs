@@ -78,8 +78,15 @@ namespace sistemaclube
 
         private void bt_voltar_Click(object sender, EventArgs e)
         {
-        
-         
+
+            if (controle.formadm == null)
+            {
+                controle.formadm = new fradm();
+                this.Hide();
+                controle.formadm.Show();
+                controle.formadm.Focus();
+            }
+
         }
     }
 }
