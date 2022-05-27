@@ -58,18 +58,18 @@
             // textBox2_SENHA
             // 
             this.textBox2_SENHA.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2_SENHA.Location = new System.Drawing.Point(985, 341);
+            this.textBox2_SENHA.Location = new System.Drawing.Point(896, 344);
             this.textBox2_SENHA.Name = "textBox2_SENHA";
             this.textBox2_SENHA.PasswordChar = '*';
-            this.textBox2_SENHA.Size = new System.Drawing.Size(237, 35);
+            this.textBox2_SENHA.Size = new System.Drawing.Size(326, 35);
             this.textBox2_SENHA.TabIndex = 10;
             // 
             // textBox1_LOGIN
             // 
             this.textBox1_LOGIN.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1_LOGIN.Location = new System.Drawing.Point(985, 271);
+            this.textBox1_LOGIN.Location = new System.Drawing.Point(896, 272);
             this.textBox1_LOGIN.Name = "textBox1_LOGIN";
-            this.textBox1_LOGIN.Size = new System.Drawing.Size(237, 31);
+            this.textBox1_LOGIN.Size = new System.Drawing.Size(326, 31);
             this.textBox1_LOGIN.TabIndex = 9;
             // 
             // label2
@@ -77,7 +77,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(891, 341);
+            this.label2.Location = new System.Drawing.Point(894, 316);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 25);
             this.label2.TabIndex = 8;
@@ -88,7 +88,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(891, 274);
+            this.label1.Location = new System.Drawing.Point(891, 238);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 25);
             this.label1.TabIndex = 7;
@@ -102,7 +102,7 @@
             this.button1_logar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1_logar.Font = new System.Drawing.Font("Segoe UI Symbol", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1_logar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1_logar.Location = new System.Drawing.Point(972, 415);
+            this.button1_logar.Location = new System.Drawing.Point(972, 436);
             this.button1_logar.Name = "button1_logar";
             this.button1_logar.Size = new System.Drawing.Size(186, 69);
             this.button1_logar.TabIndex = 12;

@@ -68,7 +68,7 @@
             lOGINLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             lOGINLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             lOGINLabel.ForeColor = System.Drawing.Color.White;
-            lOGINLabel.Location = new System.Drawing.Point(39, 39);
+            lOGINLabel.Location = new System.Drawing.Point(39, 36);
             lOGINLabel.Name = "lOGINLabel";
             lOGINLabel.Size = new System.Drawing.Size(51, 15);
             lOGINLabel.TabIndex = 3;
@@ -81,7 +81,7 @@
             sENHALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             sENHALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             sENHALabel.ForeColor = System.Drawing.Color.White;
-            sENHALabel.Location = new System.Drawing.Point(39, 83);
+            sENHALabel.Location = new System.Drawing.Point(39, 87);
             sENHALabel.Name = "sENHALabel";
             sENHALabel.Size = new System.Drawing.Size(48, 15);
             sENHALabel.TabIndex = 5;
@@ -93,7 +93,7 @@
             fUNCAOLabel.BackColor = System.Drawing.Color.Transparent;
             fUNCAOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             fUNCAOLabel.ForeColor = System.Drawing.Color.White;
-            fUNCAOLabel.Location = new System.Drawing.Point(39, 172);
+            fUNCAOLabel.Location = new System.Drawing.Point(39, 191);
             fUNCAOLabel.Name = "fUNCAOLabel";
             fUNCAOLabel.Size = new System.Drawing.Size(56, 15);
             fUNCAOLabel.TabIndex = 9;
@@ -105,7 +105,7 @@
             bLOQUEADOLabel.BackColor = System.Drawing.Color.Transparent;
             bLOQUEADOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             bLOQUEADOLabel.ForeColor = System.Drawing.Color.White;
-            bLOQUEADOLabel.Location = new System.Drawing.Point(39, 128);
+            bLOQUEADOLabel.Location = new System.Drawing.Point(39, 138);
             bLOQUEADOLabel.Name = "bLOQUEADOLabel";
             bLOQUEADOLabel.Size = new System.Drawing.Size(77, 15);
             bLOQUEADOLabel.TabIndex = 10;
@@ -137,7 +137,7 @@
             // lOGINTextBox
             // 
             this.lOGINTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "LOGIN", true));
-            this.lOGINTextBox.Location = new System.Drawing.Point(135, 37);
+            this.lOGINTextBox.Location = new System.Drawing.Point(42, 54);
             this.lOGINTextBox.Name = "lOGINTextBox";
             this.lOGINTextBox.Size = new System.Drawing.Size(547, 20);
             this.lOGINTextBox.TabIndex = 4;
@@ -145,7 +145,7 @@
             // sENHATextBox
             // 
             this.sENHATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "SENHA", true));
-            this.sENHATextBox.Location = new System.Drawing.Point(135, 83);
+            this.sENHATextBox.Location = new System.Drawing.Point(42, 103);
             this.sENHATextBox.Name = "sENHATextBox";
             this.sENHATextBox.Size = new System.Drawing.Size(121, 20);
             this.sENHATextBox.TabIndex = 6;
@@ -157,7 +157,7 @@
             this.fUNCAOComboBox.Items.AddRange(new object[] {
             "Adiministrador(a)",
             "Zelador(a)"});
-            this.fUNCAOComboBox.Location = new System.Drawing.Point(135, 170);
+            this.fUNCAOComboBox.Location = new System.Drawing.Point(42, 209);
             this.fUNCAOComboBox.Name = "fUNCAOComboBox";
             this.fUNCAOComboBox.Size = new System.Drawing.Size(121, 21);
             this.fUNCAOComboBox.TabIndex = 10;
@@ -169,7 +169,7 @@
             this.bLOQUEADOComboBox.Items.AddRange(new object[] {
             "S",
             "N"});
-            this.bLOQUEADOComboBox.Location = new System.Drawing.Point(135, 125);
+            this.bLOQUEADOComboBox.Location = new System.Drawing.Point(42, 156);
             this.bLOQUEADOComboBox.Name = "bLOQUEADOComboBox";
             this.bLOQUEADOComboBox.Size = new System.Drawing.Size(121, 21);
             this.bLOQUEADOComboBox.TabIndex = 11;

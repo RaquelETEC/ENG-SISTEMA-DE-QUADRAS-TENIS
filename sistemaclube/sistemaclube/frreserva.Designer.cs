@@ -52,7 +52,6 @@
             this.dIADateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.pAGAMENTOComboBox = new System.Windows.Forms.ComboBox();
             this.vALORTextBox = new System.Windows.Forms.TextBox();
-            this.sTATUS_PAGComboBox = new System.Windows.Forms.ComboBox();
             this.nUM_QUADRAComboBox = new System.Windows.Forms.ComboBox();
             this.cad_quadraBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cOMPARECEUComboBox = new System.Windows.Forms.ComboBox();
@@ -84,6 +83,8 @@
             this.tIPO_RESERVAComboBox = new System.Windows.Forms.ComboBox();
             this.hORA_INICIOComboBox = new System.Windows.Forms.ComboBox();
             this.hORA_FIMComboBox = new System.Windows.Forms.ComboBox();
+            this.rpendente = new System.Windows.Forms.RadioButton();
+            this.rpago = new System.Windows.Forms.RadioButton();
             nOME_CLIENTELabel = new System.Windows.Forms.Label();
             cPF_CLIENTELabel = new System.Windows.Forms.Label();
             tELEFONE_CLIENTELabel = new System.Windows.Forms.Label();
@@ -347,18 +348,6 @@
             this.vALORTextBox.Name = "vALORTextBox";
             this.vALORTextBox.Size = new System.Drawing.Size(204, 20);
             this.vALORTextBox.TabIndex = 14;
-            // 
-            // sTATUS_PAGComboBox
-            // 
-            this.sTATUS_PAGComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservaBindingSource, "STATUS_PAG", true));
-            this.sTATUS_PAGComboBox.FormattingEnabled = true;
-            this.sTATUS_PAGComboBox.Items.AddRange(new object[] {
-            "Pendente",
-            "Pago"});
-            this.sTATUS_PAGComboBox.Location = new System.Drawing.Point(518, 156);
-            this.sTATUS_PAGComboBox.Name = "sTATUS_PAGComboBox";
-            this.sTATUS_PAGComboBox.Size = new System.Drawing.Size(234, 21);
-            this.sTATUS_PAGComboBox.TabIndex = 16;
             // 
             // nUM_QUADRAComboBox
             // 
@@ -682,12 +671,46 @@
             this.hORA_FIMComboBox.Size = new System.Drawing.Size(83, 21);
             this.hORA_FIMComboBox.TabIndex = 45;
             // 
+            // rpendente
+            // 
+            this.rpendente.AutoSize = true;
+            this.rpendente.BackColor = System.Drawing.Color.Transparent;
+            this.rpendente.CausesValidation = false;
+            this.rpendente.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.reservaBindingSource, "STATUS_PAG", true));
+            this.rpendente.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rpendente.ForeColor = System.Drawing.Color.White;
+            this.rpendente.Location = new System.Drawing.Point(531, 159);
+            this.rpendente.Name = "rpendente";
+            this.rpendente.Size = new System.Drawing.Size(56, 19);
+            this.rpendente.TabIndex = 46;
+            this.rpendente.Text = "Pago";
+            this.rpendente.UseVisualStyleBackColor = false;
+            // 
+            // rpago
+            // 
+            this.rpago.AutoSize = true;
+            this.rpago.BackColor = System.Drawing.Color.Transparent;
+            this.rpago.CausesValidation = false;
+            this.rpago.Checked = true;
+            this.rpago.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.reservaBindingSource, "STATUS_PAG", true));
+            this.rpago.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rpago.ForeColor = System.Drawing.Color.White;
+            this.rpago.Location = new System.Drawing.Point(663, 159);
+            this.rpago.Name = "rpago";
+            this.rpago.Size = new System.Drawing.Size(83, 19);
+            this.rpago.TabIndex = 47;
+            this.rpago.TabStop = true;
+            this.rpago.Text = "Pendente";
+            this.rpago.UseVisualStyleBackColor = false;
+            // 
             // frreserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
             this.ClientSize = new System.Drawing.Size(1353, 703);
+            this.Controls.Add(this.rpago);
+            this.Controls.Add(this.rpendente);
             this.Controls.Add(hORA_FIMLabel);
             this.Controls.Add(this.hORA_FIMComboBox);
             this.Controls.Add(hORA_INICIOLabel1);
@@ -714,7 +737,6 @@
             this.Controls.Add(vALORLabel);
             this.Controls.Add(this.vALORTextBox);
             this.Controls.Add(sTATUS_PAGLabel);
-            this.Controls.Add(this.sTATUS_PAGComboBox);
             this.Controls.Add(nUM_QUADRALabel);
             this.Controls.Add(this.nUM_QUADRAComboBox);
             this.Controls.Add(hORA_CHEGADALabel);
@@ -747,7 +769,6 @@
         private System.Windows.Forms.DateTimePicker dIADateTimePicker;
         private System.Windows.Forms.ComboBox pAGAMENTOComboBox;
         private System.Windows.Forms.TextBox vALORTextBox;
-        private System.Windows.Forms.ComboBox sTATUS_PAGComboBox;
         private System.Windows.Forms.ComboBox nUM_QUADRAComboBox;
         private System.Windows.Forms.ComboBox cOMPARECEUComboBox;
         private System.Windows.Forms.BindingSource cad_quadraBindingSource;
@@ -779,5 +800,7 @@
         private System.Windows.Forms.ComboBox tIPO_RESERVAComboBox;
         private System.Windows.Forms.ComboBox hORA_INICIOComboBox;
         private System.Windows.Forms.ComboBox hORA_FIMComboBox;
+        private System.Windows.Forms.RadioButton rpendente;
+        private System.Windows.Forms.RadioButton rpago;
     }
 }
