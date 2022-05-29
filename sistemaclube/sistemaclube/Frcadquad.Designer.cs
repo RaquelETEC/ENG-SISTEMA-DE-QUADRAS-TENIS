@@ -201,6 +201,7 @@
             this.cOBERTAComboBox.Name = "cOBERTAComboBox";
             this.cOBERTAComboBox.Size = new System.Drawing.Size(53, 21);
             this.cOBERTAComboBox.TabIndex = 10;
+            this.cOBERTAComboBox.SelectedIndexChanged += new System.EventHandler(this.cOBERTAComboBox_SelectedIndexChanged);
             // 
             // aRQUIBANCADAComboBox
             // 
