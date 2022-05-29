@@ -151,12 +151,12 @@
             dIALabel.BackColor = System.Drawing.Color.Transparent;
             dIALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             dIALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dIALabel.ForeColor = System.Drawing.Color.White;
+            dIALabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dIALabel.Location = new System.Drawing.Point(518, 82);
             dIALabel.Name = "dIALabel";
-            dIALabel.Size = new System.Drawing.Size(106, 15);
+            dIALabel.Size = new System.Drawing.Size(112, 15);
             dIALabel.TabIndex = 9;
-            dIALabel.Text = "Data de reserva:";
+            dIALabel.Text = "*Data de reserva:";
             // 
             // pAGAMENTOLabel
             // 
@@ -201,12 +201,12 @@
             nUM_QUADRALabel.AutoSize = true;
             nUM_QUADRALabel.BackColor = System.Drawing.Color.Transparent;
             nUM_QUADRALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nUM_QUADRALabel.ForeColor = System.Drawing.Color.White;
+            nUM_QUADRALabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             nUM_QUADRALabel.Location = new System.Drawing.Point(283, 81);
             nUM_QUADRALabel.Name = "nUM_QUADRALabel";
-            nUM_QUADRALabel.Size = new System.Drawing.Size(74, 15);
+            nUM_QUADRALabel.Size = new System.Drawing.Size(80, 15);
             nUM_QUADRALabel.TabIndex = 19;
-            nUM_QUADRALabel.Text = "N° quadra:";
+            nUM_QUADRALabel.Text = "*N° quadra:";
             // 
             // hORA_CHEGADALabel
             // 
@@ -252,12 +252,12 @@
             tIPO_RESERVALabel.BackColor = System.Drawing.Color.Transparent;
             tIPO_RESERVALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             tIPO_RESERVALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tIPO_RESERVALabel.ForeColor = System.Drawing.Color.White;
+            tIPO_RESERVALabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             tIPO_RESERVALabel.Location = new System.Drawing.Point(46, 81);
             tIPO_RESERVALabel.Name = "tIPO_RESERVALabel";
-            tIPO_RESERVALabel.Size = new System.Drawing.Size(106, 15);
+            tIPO_RESERVALabel.Size = new System.Drawing.Size(112, 15);
             tIPO_RESERVALabel.TabIndex = 42;
-            tIPO_RESERVALabel.Text = "Tipo de reserva:";
+            tIPO_RESERVALabel.Text = "*Tipo de reserva:";
             // 
             // hORA_INICIOLabel1
             // 
@@ -265,24 +265,24 @@
             hORA_INICIOLabel1.BackColor = System.Drawing.Color.Transparent;
             hORA_INICIOLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             hORA_INICIOLabel1.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            hORA_INICIOLabel1.ForeColor = System.Drawing.Color.White;
+            hORA_INICIOLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             hORA_INICIOLabel1.Location = new System.Drawing.Point(46, 192);
             hORA_INICIOLabel1.Name = "hORA_INICIOLabel1";
-            hORA_INICIOLabel1.Size = new System.Drawing.Size(80, 15);
+            hORA_INICIOLabel1.Size = new System.Drawing.Size(86, 15);
             hORA_INICIOLabel1.TabIndex = 43;
-            hORA_INICIOLabel1.Text = "Hora início:";
+            hORA_INICIOLabel1.Text = "*Hora início:";
             // 
             // hORA_FIMLabel
             // 
             hORA_FIMLabel.AutoSize = true;
             hORA_FIMLabel.BackColor = System.Drawing.Color.Transparent;
             hORA_FIMLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            hORA_FIMLabel.ForeColor = System.Drawing.Color.White;
+            hORA_FIMLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             hORA_FIMLabel.Location = new System.Drawing.Point(167, 192);
             hORA_FIMLabel.Name = "hORA_FIMLabel";
-            hORA_FIMLabel.Size = new System.Drawing.Size(66, 15);
+            hORA_FIMLabel.Size = new System.Drawing.Size(72, 15);
             hORA_FIMLabel.TabIndex = 44;
-            hORA_FIMLabel.Text = "Hora fim:";
+            hORA_FIMLabel.Text = "*Hora fim:";
             // 
             // sistemaDataSet
             // 

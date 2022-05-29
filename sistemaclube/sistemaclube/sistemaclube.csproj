@@ -99,11 +99,6 @@
     <Compile Include="sistemaDataSet.cs">
       <DependentUpon>sistemaDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="sistemaDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="fradm.resx">
       <DependentUpon>fradm.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,7 +141,6 @@
     </None>
     <None Include="sistemaDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>sistemaDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="sistemaDataSet.xss">
