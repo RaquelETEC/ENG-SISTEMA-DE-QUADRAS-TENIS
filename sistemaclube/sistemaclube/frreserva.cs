@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace sistemaclube
 {
@@ -46,12 +48,55 @@ namespace sistemaclube
 
         private void btsalvar_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.reservaBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
-            MessageBox.Show("Reserva salva com sucesso!", "Reserva de quardas ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+            if (tIPO_RESERVAComboBox.Text == "" || hORA_INICIOComboBox.Text == "" || hORA_FIMComboBox.Text == "" || nUM_QUADRAComboBox.Text == "")
+            {
+                MessageBox.Show("Preencha todos os campos obrigatorios (*)", "ATENÇÃO ", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            }
+            else
+            {
+                MySqlConnection mConn = new
+             MySqlConnection("server=localhost;" +
+             "database=sistema;" +
+             "uid=root;pwd=Gata1203");
+
+                mConn.Open();
+
+                //TESTE ALO GIT
+                MySqlCommand comando = new MySqlCommand("" +
+                    "select * from reserva where HORA_INICIO= '" + hORA_INICIOComboBox.Text + "'" +
+                    "and HORA_FIM= '" + hORA_FIMComboBox.Text + "'" +
+                    "and ID_RESERVA is not null " +
+                    "and  NUM_QUADRA = '" + nUM_QUADRAComboBox + "';", mConn);
+
+                comando.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                MySqlDataAdapter a = new MySqlDataAdapter(comando);
+                a.Fill(dt);
+
+                short i = Convert.ToInt16(dt.Rows.Count.ToString());
+
+                //teste
+
+                if (i > 0)
+                {
+
+                    MessageBox.Show("Horario ja Reservado!");
+
+                    hORA_INICIOComboBox.Text = "";
+                    hORA_FIMComboBox.Text = "";
+
+                }
+                else
+                {
+
+                    this.Validate();
+                    this.reservaBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
+                    MessageBox.Show("Reserva salva com sucesso!", "Reserva de quardas ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
         private void btcancelar_Click(object sender, EventArgs e)
         {
             this.reservaBindingSource.CancelEdit();

@@ -49,12 +49,20 @@ namespace sistemaclube
 
         private void btsalvar_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.cad_quadraBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
-            MessageBox.Show("Cadastro salvo com sucesso!", "Cadastro de quadra", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+            if (nUM_QUADRATextBox.Text == "" || nOME_QUADRATextBox.Text == "" || cOBERTAComboBox.Text == "" ||
+               aRQUIBANCADAComboBox.Text == "" || bANCOComboBox.Text == "" || bLOQUEADOComboBox.Text == "")
+            {
+                MessageBox.Show("Preencha todos os campos!", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            }
+            else
+            {
+                this.Validate();
+                this.cad_quadraBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
+                MessageBox.Show("Cadastro salvo com sucesso!", "Cadastro de quadra", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
         private void btcancelar_Click(object sender, EventArgs e)
         {
             this.cad_quadraBindingSource.CancelEdit();
