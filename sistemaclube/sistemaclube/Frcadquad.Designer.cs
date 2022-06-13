@@ -80,12 +80,12 @@
             nUM_QUADRALabel.BackColor = System.Drawing.Color.Transparent;
             nUM_QUADRALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             nUM_QUADRALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nUM_QUADRALabel.ForeColor = System.Drawing.Color.White;
+            nUM_QUADRALabel.ForeColor = System.Drawing.Color.Lime;
             nUM_QUADRALabel.Location = new System.Drawing.Point(41, 30);
             nUM_QUADRALabel.Name = "nUM_QUADRALabel";
-            nUM_QUADRALabel.Size = new System.Drawing.Size(74, 15);
+            nUM_QUADRALabel.Size = new System.Drawing.Size(80, 15);
             nUM_QUADRALabel.TabIndex = 5;
-            nUM_QUADRALabel.Text = "N° quadra:";
+            nUM_QUADRALabel.Text = "*N° quadra:";
             // 
             // nOME_QUADRALabel
             // 
@@ -93,12 +93,12 @@
             nOME_QUADRALabel.BackColor = System.Drawing.Color.Transparent;
             nOME_QUADRALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             nOME_QUADRALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nOME_QUADRALabel.ForeColor = System.Drawing.Color.White;
+            nOME_QUADRALabel.ForeColor = System.Drawing.Color.Lime;
             nOME_QUADRALabel.Location = new System.Drawing.Point(40, 78);
             nOME_QUADRALabel.Name = "nOME_QUADRALabel";
-            nOME_QUADRALabel.Size = new System.Drawing.Size(105, 15);
+            nOME_QUADRALabel.Size = new System.Drawing.Size(111, 15);
             nOME_QUADRALabel.TabIndex = 7;
-            nOME_QUADRALabel.Text = "Tipo de quadra:";
+            nOME_QUADRALabel.Text = "*Tipo de quadra:";
             // 
             // cOBERTALabel
             // 
@@ -106,12 +106,12 @@
             cOBERTALabel.BackColor = System.Drawing.Color.Transparent;
             cOBERTALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cOBERTALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            cOBERTALabel.ForeColor = System.Drawing.Color.White;
+            cOBERTALabel.ForeColor = System.Drawing.Color.Lime;
             cOBERTALabel.Location = new System.Drawing.Point(41, 121);
             cOBERTALabel.Name = "cOBERTALabel";
-            cOBERTALabel.Size = new System.Drawing.Size(60, 15);
+            cOBERTALabel.Size = new System.Drawing.Size(66, 15);
             cOBERTALabel.TabIndex = 9;
-            cOBERTALabel.Text = "Coberta:";
+            cOBERTALabel.Text = "*Coberta:";
             // 
             // aRQUIBANCADALabel
             // 
@@ -119,12 +119,12 @@
             aRQUIBANCADALabel.BackColor = System.Drawing.Color.Transparent;
             aRQUIBANCADALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             aRQUIBANCADALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            aRQUIBANCADALabel.ForeColor = System.Drawing.Color.White;
+            aRQUIBANCADALabel.ForeColor = System.Drawing.Color.Lime;
             aRQUIBANCADALabel.Location = new System.Drawing.Point(196, 123);
             aRQUIBANCADALabel.Name = "aRQUIBANCADALabel";
-            aRQUIBANCADALabel.Size = new System.Drawing.Size(97, 15);
+            aRQUIBANCADALabel.Size = new System.Drawing.Size(103, 15);
             aRQUIBANCADALabel.TabIndex = 11;
-            aRQUIBANCADALabel.Text = "Arquibancada:";
+            aRQUIBANCADALabel.Text = "*Arquibancada:";
             // 
             // bANCOLabel
             // 
@@ -132,24 +132,24 @@
             bANCOLabel.BackColor = System.Drawing.Color.Transparent;
             bANCOLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             bANCOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bANCOLabel.ForeColor = System.Drawing.Color.White;
+            bANCOLabel.ForeColor = System.Drawing.Color.Lime;
             bANCOLabel.Location = new System.Drawing.Point(41, 170);
             bANCOLabel.Name = "bANCOLabel";
-            bANCOLabel.Size = new System.Drawing.Size(49, 15);
+            bANCOLabel.Size = new System.Drawing.Size(55, 15);
             bANCOLabel.TabIndex = 13;
-            bANCOLabel.Text = "Banco:";
+            bANCOLabel.Text = "*Banco:";
             // 
             // bLOQUEADOLabel
             // 
             bLOQUEADOLabel.AutoSize = true;
             bLOQUEADOLabel.BackColor = System.Drawing.Color.Transparent;
             bLOQUEADOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bLOQUEADOLabel.ForeColor = System.Drawing.Color.White;
+            bLOQUEADOLabel.ForeColor = System.Drawing.Color.Lime;
             bLOQUEADOLabel.Location = new System.Drawing.Point(205, 170);
             bLOQUEADOLabel.Name = "bLOQUEADOLabel";
-            bLOQUEADOLabel.Size = new System.Drawing.Size(77, 15);
+            bLOQUEADOLabel.Size = new System.Drawing.Size(83, 15);
             bLOQUEADOLabel.TabIndex = 15;
-            bLOQUEADOLabel.Text = "Bloqueado:";
+            bLOQUEADOLabel.Text = "*Bloqueado:";
             bLOQUEADOLabel.Click += new System.EventHandler(this.bLOQUEADOLabel_Click);
             // 
             // data_cadLabel
@@ -158,12 +158,12 @@
             data_cadLabel.BackColor = System.Drawing.Color.Transparent;
             data_cadLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             data_cadLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            data_cadLabel.ForeColor = System.Drawing.Color.White;
+            data_cadLabel.ForeColor = System.Drawing.Color.Lime;
             data_cadLabel.Location = new System.Drawing.Point(41, 215);
             data_cadLabel.Name = "data_cadLabel";
-            data_cadLabel.Size = new System.Drawing.Size(115, 15);
+            data_cadLabel.Size = new System.Drawing.Size(121, 15);
             data_cadLabel.TabIndex = 17;
-            data_cadLabel.Text = "Data de cadastro:";
+            data_cadLabel.Text = "*Data de cadastro:";
             // 
             // cad_quadraBindingSource
             // 
@@ -462,6 +462,7 @@
             this.Controls.Add(this.bLOQUEADOComboBox);
             this.Controls.Add(data_cadLabel);
             this.Controls.Add(this.data_cadDateTimePicker);
+            this.ForeColor = System.Drawing.Color.Lime;
             this.Name = "Frcadquad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "cadastros de quadra";

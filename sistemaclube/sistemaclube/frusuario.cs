@@ -39,12 +39,20 @@ namespace sistemaclube
 
         private void btsalvar_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.usuarioBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
-            MessageBox.Show("Cadastro salvo com sucesso!", "Cadastro de usuário", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+            if (lOGINTextBox.Text == "" || sENHATextBox.Text == "" || bLOQUEADOComboBox.Text == "" || fUNCAOComboBox.Text == "")
+            {
+                MessageBox.Show("Preencha todos os campos obrigatorios (*)", "ATENÇÃO ", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            }
+            else
+            {
+
+                this.Validate();
+                this.usuarioBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
+                MessageBox.Show("Cadastro salvo com sucesso!", "Cadastro de usuário", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
         private void btcancelar_Click(object sender, EventArgs e)
         {
             this.usuarioBindingSource.CancelEdit();

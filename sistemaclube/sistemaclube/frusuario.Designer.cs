@@ -68,12 +68,12 @@
             lOGINLabel.BackColor = System.Drawing.Color.Transparent;
             lOGINLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             lOGINLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lOGINLabel.ForeColor = System.Drawing.Color.White;
+            lOGINLabel.ForeColor = System.Drawing.Color.Lime;
             lOGINLabel.Location = new System.Drawing.Point(39, 36);
             lOGINLabel.Name = "lOGINLabel";
-            lOGINLabel.Size = new System.Drawing.Size(51, 15);
+            lOGINLabel.Size = new System.Drawing.Size(57, 15);
             lOGINLabel.TabIndex = 3;
-            lOGINLabel.Text = "E-mail:";
+            lOGINLabel.Text = "*E-mail:";
             // 
             // sENHALabel
             // 
@@ -81,36 +81,36 @@
             sENHALabel.BackColor = System.Drawing.Color.Transparent;
             sENHALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             sENHALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            sENHALabel.ForeColor = System.Drawing.Color.White;
+            sENHALabel.ForeColor = System.Drawing.Color.Lime;
             sENHALabel.Location = new System.Drawing.Point(39, 87);
             sENHALabel.Name = "sENHALabel";
-            sENHALabel.Size = new System.Drawing.Size(48, 15);
+            sENHALabel.Size = new System.Drawing.Size(54, 15);
             sENHALabel.TabIndex = 5;
-            sENHALabel.Text = "Senha:";
+            sENHALabel.Text = "*Senha:";
             // 
             // fUNCAOLabel
             // 
             fUNCAOLabel.AutoSize = true;
             fUNCAOLabel.BackColor = System.Drawing.Color.Transparent;
             fUNCAOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            fUNCAOLabel.ForeColor = System.Drawing.Color.White;
+            fUNCAOLabel.ForeColor = System.Drawing.Color.Lime;
             fUNCAOLabel.Location = new System.Drawing.Point(39, 191);
             fUNCAOLabel.Name = "fUNCAOLabel";
-            fUNCAOLabel.Size = new System.Drawing.Size(56, 15);
+            fUNCAOLabel.Size = new System.Drawing.Size(62, 15);
             fUNCAOLabel.TabIndex = 9;
-            fUNCAOLabel.Text = "Função:";
+            fUNCAOLabel.Text = "*Função:";
             // 
             // bLOQUEADOLabel
             // 
             bLOQUEADOLabel.AutoSize = true;
             bLOQUEADOLabel.BackColor = System.Drawing.Color.Transparent;
             bLOQUEADOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bLOQUEADOLabel.ForeColor = System.Drawing.Color.White;
+            bLOQUEADOLabel.ForeColor = System.Drawing.Color.Lime;
             bLOQUEADOLabel.Location = new System.Drawing.Point(39, 138);
             bLOQUEADOLabel.Name = "bLOQUEADOLabel";
-            bLOQUEADOLabel.Size = new System.Drawing.Size(77, 15);
+            bLOQUEADOLabel.Size = new System.Drawing.Size(83, 15);
             bLOQUEADOLabel.TabIndex = 10;
-            bLOQUEADOLabel.Text = "Bloqueado:";
+            bLOQUEADOLabel.Text = "*Bloqueado:";
             // 
             // sistemaDataSet
             // 
