@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label nUM_QUADRALabel;
             System.Windows.Forms.Label nOME_QUADRALabel;
             System.Windows.Forms.Label cOBERTALabel;
             System.Windows.Forms.Label aRQUIBANCADALabel;
             System.Windows.Forms.Label bANCOLabel;
             System.Windows.Forms.Label bLOQUEADOLabel;
             System.Windows.Forms.Label data_cadLabel;
+            System.Windows.Forms.Label nUM_QUADRALabel;
             this.cad_quadraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sistemaDataSet = new sistemaclube.sistemaDataSet();
             this.nUM_QUADRATextBox = new System.Windows.Forms.TextBox();
@@ -56,36 +56,29 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btsair2 = new System.Windows.Forms.Button();
             this.btexcluir = new System.Windows.Forms.Button();
             this.btcancelar = new System.Windows.Forms.Button();
             this.btsalvar = new System.Windows.Forms.Button();
             this.btinserir = new System.Windows.Forms.Button();
             this.btvoltar = new System.Windows.Forms.Button();
-            nUM_QUADRALabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             nOME_QUADRALabel = new System.Windows.Forms.Label();
             cOBERTALabel = new System.Windows.Forms.Label();
             aRQUIBANCADALabel = new System.Windows.Forms.Label();
             bANCOLabel = new System.Windows.Forms.Label();
             bLOQUEADOLabel = new System.Windows.Forms.Label();
             data_cadLabel = new System.Windows.Forms.Label();
+            nUM_QUADRALabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cad_quadraBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cad_quadraDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // nUM_QUADRALabel
-            // 
-            nUM_QUADRALabel.AutoSize = true;
-            nUM_QUADRALabel.BackColor = System.Drawing.Color.Transparent;
-            nUM_QUADRALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            nUM_QUADRALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nUM_QUADRALabel.ForeColor = System.Drawing.Color.Lime;
-            nUM_QUADRALabel.Location = new System.Drawing.Point(41, 30);
-            nUM_QUADRALabel.Name = "nUM_QUADRALabel";
-            nUM_QUADRALabel.Size = new System.Drawing.Size(80, 15);
-            nUM_QUADRALabel.TabIndex = 5;
-            nUM_QUADRALabel.Text = "*N° quadra:";
             // 
             // nOME_QUADRALabel
             // 
@@ -93,12 +86,12 @@
             nOME_QUADRALabel.BackColor = System.Drawing.Color.Transparent;
             nOME_QUADRALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             nOME_QUADRALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nOME_QUADRALabel.ForeColor = System.Drawing.Color.Lime;
-            nOME_QUADRALabel.Location = new System.Drawing.Point(40, 78);
+            nOME_QUADRALabel.ForeColor = System.Drawing.Color.White;
+            nOME_QUADRALabel.Location = new System.Drawing.Point(55, 78);
             nOME_QUADRALabel.Name = "nOME_QUADRALabel";
-            nOME_QUADRALabel.Size = new System.Drawing.Size(111, 15);
+            nOME_QUADRALabel.Size = new System.Drawing.Size(105, 15);
             nOME_QUADRALabel.TabIndex = 7;
-            nOME_QUADRALabel.Text = "*Tipo de quadra:";
+            nOME_QUADRALabel.Text = "Tipo de quadra:";
             // 
             // cOBERTALabel
             // 
@@ -106,12 +99,12 @@
             cOBERTALabel.BackColor = System.Drawing.Color.Transparent;
             cOBERTALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cOBERTALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            cOBERTALabel.ForeColor = System.Drawing.Color.Lime;
-            cOBERTALabel.Location = new System.Drawing.Point(41, 121);
+            cOBERTALabel.ForeColor = System.Drawing.Color.White;
+            cOBERTALabel.Location = new System.Drawing.Point(55, 133);
             cOBERTALabel.Name = "cOBERTALabel";
-            cOBERTALabel.Size = new System.Drawing.Size(66, 15);
+            cOBERTALabel.Size = new System.Drawing.Size(60, 15);
             cOBERTALabel.TabIndex = 9;
-            cOBERTALabel.Text = "*Coberta:";
+            cOBERTALabel.Text = "Coberta:";
             // 
             // aRQUIBANCADALabel
             // 
@@ -119,12 +112,12 @@
             aRQUIBANCADALabel.BackColor = System.Drawing.Color.Transparent;
             aRQUIBANCADALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             aRQUIBANCADALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            aRQUIBANCADALabel.ForeColor = System.Drawing.Color.Lime;
-            aRQUIBANCADALabel.Location = new System.Drawing.Point(196, 123);
+            aRQUIBANCADALabel.ForeColor = System.Drawing.Color.White;
+            aRQUIBANCADALabel.Location = new System.Drawing.Point(186, 133);
             aRQUIBANCADALabel.Name = "aRQUIBANCADALabel";
-            aRQUIBANCADALabel.Size = new System.Drawing.Size(103, 15);
+            aRQUIBANCADALabel.Size = new System.Drawing.Size(97, 15);
             aRQUIBANCADALabel.TabIndex = 11;
-            aRQUIBANCADALabel.Text = "*Arquibancada:";
+            aRQUIBANCADALabel.Text = "Arquibancada:";
             // 
             // bANCOLabel
             // 
@@ -132,24 +125,24 @@
             bANCOLabel.BackColor = System.Drawing.Color.Transparent;
             bANCOLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             bANCOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bANCOLabel.ForeColor = System.Drawing.Color.Lime;
-            bANCOLabel.Location = new System.Drawing.Point(41, 170);
+            bANCOLabel.ForeColor = System.Drawing.Color.White;
+            bANCOLabel.Location = new System.Drawing.Point(55, 186);
             bANCOLabel.Name = "bANCOLabel";
-            bANCOLabel.Size = new System.Drawing.Size(55, 15);
+            bANCOLabel.Size = new System.Drawing.Size(49, 15);
             bANCOLabel.TabIndex = 13;
-            bANCOLabel.Text = "*Banco:";
+            bANCOLabel.Text = "Banco:";
             // 
             // bLOQUEADOLabel
             // 
             bLOQUEADOLabel.AutoSize = true;
             bLOQUEADOLabel.BackColor = System.Drawing.Color.Transparent;
             bLOQUEADOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bLOQUEADOLabel.ForeColor = System.Drawing.Color.Lime;
-            bLOQUEADOLabel.Location = new System.Drawing.Point(205, 170);
+            bLOQUEADOLabel.ForeColor = System.Drawing.Color.White;
+            bLOQUEADOLabel.Location = new System.Drawing.Point(186, 186);
             bLOQUEADOLabel.Name = "bLOQUEADOLabel";
-            bLOQUEADOLabel.Size = new System.Drawing.Size(83, 15);
+            bLOQUEADOLabel.Size = new System.Drawing.Size(77, 15);
             bLOQUEADOLabel.TabIndex = 15;
-            bLOQUEADOLabel.Text = "*Bloqueado:";
+            bLOQUEADOLabel.Text = "Bloqueado:";
             bLOQUEADOLabel.Click += new System.EventHandler(this.bLOQUEADOLabel_Click);
             // 
             // data_cadLabel
@@ -158,12 +151,12 @@
             data_cadLabel.BackColor = System.Drawing.Color.Transparent;
             data_cadLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             data_cadLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            data_cadLabel.ForeColor = System.Drawing.Color.Lime;
-            data_cadLabel.Location = new System.Drawing.Point(41, 215);
+            data_cadLabel.ForeColor = System.Drawing.Color.White;
+            data_cadLabel.Location = new System.Drawing.Point(55, 241);
             data_cadLabel.Name = "data_cadLabel";
-            data_cadLabel.Size = new System.Drawing.Size(121, 15);
+            data_cadLabel.Size = new System.Drawing.Size(115, 15);
             data_cadLabel.TabIndex = 17;
-            data_cadLabel.Text = "*Data de cadastro:";
+            data_cadLabel.Text = "Data de cadastro:";
             // 
             // cad_quadraBindingSource
             // 
@@ -178,7 +171,7 @@
             // nUM_QUADRATextBox
             // 
             this.nUM_QUADRATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cad_quadraBindingSource, "NUM_QUADRA", true));
-            this.nUM_QUADRATextBox.Location = new System.Drawing.Point(151, 28);
+            this.nUM_QUADRATextBox.Location = new System.Drawing.Point(44, 44);
             this.nUM_QUADRATextBox.Name = "nUM_QUADRATextBox";
             this.nUM_QUADRATextBox.Size = new System.Drawing.Size(590, 20);
             this.nUM_QUADRATextBox.TabIndex = 6;
@@ -186,7 +179,7 @@
             // nOME_QUADRATextBox
             // 
             this.nOME_QUADRATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cad_quadraBindingSource, "NOME_QUADRA", true));
-            this.nOME_QUADRATextBox.Location = new System.Drawing.Point(151, 75);
+            this.nOME_QUADRATextBox.Location = new System.Drawing.Point(43, 96);
             this.nOME_QUADRATextBox.Name = "nOME_QUADRATextBox";
             this.nOME_QUADRATextBox.Size = new System.Drawing.Size(590, 20);
             this.nOME_QUADRATextBox.TabIndex = 8;
@@ -198,9 +191,9 @@
             this.cOBERTAComboBox.Items.AddRange(new object[] {
             "S",
             "N"});
-            this.cOBERTAComboBox.Location = new System.Drawing.Point(128, 118);
+            this.cOBERTAComboBox.Location = new System.Drawing.Point(43, 151);
             this.cOBERTAComboBox.Name = "cOBERTAComboBox";
-            this.cOBERTAComboBox.Size = new System.Drawing.Size(53, 21);
+            this.cOBERTAComboBox.Size = new System.Drawing.Size(72, 21);
             this.cOBERTAComboBox.TabIndex = 10;
             // 
             // aRQUIBANCADAComboBox
@@ -210,9 +203,9 @@
             this.aRQUIBANCADAComboBox.Items.AddRange(new object[] {
             "S",
             "N"});
-            this.aRQUIBANCADAComboBox.Location = new System.Drawing.Point(299, 121);
+            this.aRQUIBANCADAComboBox.Location = new System.Drawing.Point(177, 151);
             this.aRQUIBANCADAComboBox.Name = "aRQUIBANCADAComboBox";
-            this.aRQUIBANCADAComboBox.Size = new System.Drawing.Size(53, 21);
+            this.aRQUIBANCADAComboBox.Size = new System.Drawing.Size(106, 21);
             this.aRQUIBANCADAComboBox.TabIndex = 12;
             // 
             // bANCOComboBox
@@ -222,9 +215,9 @@
             this.bANCOComboBox.Items.AddRange(new object[] {
             "S",
             "N"});
-            this.bANCOComboBox.Location = new System.Drawing.Point(127, 168);
+            this.bANCOComboBox.Location = new System.Drawing.Point(44, 204);
             this.bANCOComboBox.Name = "bANCOComboBox";
-            this.bANCOComboBox.Size = new System.Drawing.Size(53, 21);
+            this.bANCOComboBox.Size = new System.Drawing.Size(71, 21);
             this.bANCOComboBox.TabIndex = 14;
             // 
             // bLOQUEADOComboBox
@@ -234,16 +227,16 @@
             this.bLOQUEADOComboBox.Items.AddRange(new object[] {
             "S",
             "N"});
-            this.bLOQUEADOComboBox.Location = new System.Drawing.Point(298, 168);
+            this.bLOQUEADOComboBox.Location = new System.Drawing.Point(177, 204);
             this.bLOQUEADOComboBox.Name = "bLOQUEADOComboBox";
-            this.bLOQUEADOComboBox.Size = new System.Drawing.Size(53, 21);
+            this.bLOQUEADOComboBox.Size = new System.Drawing.Size(106, 21);
             this.bLOQUEADOComboBox.TabIndex = 16;
             this.bLOQUEADOComboBox.SelectedIndexChanged += new System.EventHandler(this.bLOQUEADOComboBox_SelectedIndexChanged);
             // 
             // data_cadDateTimePicker
             // 
             this.data_cadDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.cad_quadraBindingSource, "Data_cad", true));
-            this.data_cadDateTimePicker.Location = new System.Drawing.Point(162, 212);
+            this.data_cadDateTimePicker.Location = new System.Drawing.Point(43, 259);
             this.data_cadDateTimePicker.Name = "data_cadDateTimePicker";
             this.data_cadDateTimePicker.Size = new System.Drawing.Size(226, 20);
             this.data_cadDateTimePicker.TabIndex = 18;
@@ -277,10 +270,10 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.cad_quadraDataGridView.DataSource = this.cad_quadraBindingSource;
-            this.cad_quadraDataGridView.Location = new System.Drawing.Point(43, 270);
+            this.cad_quadraDataGridView.Location = new System.Drawing.Point(43, 299);
             this.cad_quadraDataGridView.Name = "cad_quadraDataGridView";
             this.cad_quadraDataGridView.ReadOnly = true;
-            this.cad_quadraDataGridView.Size = new System.Drawing.Size(1284, 401);
+            this.cad_quadraDataGridView.Size = new System.Drawing.Size(1273, 372);
             this.cad_quadraDataGridView.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn1
@@ -346,21 +339,6 @@
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             this.dataGridViewTextBoxColumn8.Width = 150;
             // 
-            // btsair2
-            // 
-            this.btsair2.BackColor = System.Drawing.Color.Red;
-            this.btsair2.FlatAppearance.BorderSize = 0;
-            this.btsair2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btsair2.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btsair2.ForeColor = System.Drawing.Color.White;
-            this.btsair2.Location = new System.Drawing.Point(1325, 6);
-            this.btsair2.Name = "btsair2";
-            this.btsair2.Size = new System.Drawing.Size(28, 23);
-            this.btsair2.TabIndex = 23;
-            this.btsair2.Text = "X";
-            this.btsair2.UseVisualStyleBackColor = false;
-            this.btsair2.Click += new System.EventHandler(this.btsair2_Click);
-            // 
             // btexcluir
             // 
             this.btexcluir.BackColor = System.Drawing.Color.Transparent;
@@ -369,7 +347,7 @@
             this.btexcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btexcluir.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btexcluir.ForeColor = System.Drawing.Color.White;
-            this.btexcluir.Location = new System.Drawing.Point(1222, 205);
+            this.btexcluir.Location = new System.Drawing.Point(1211, 200);
             this.btexcluir.Name = "btexcluir";
             this.btexcluir.Size = new System.Drawing.Size(105, 38);
             this.btexcluir.TabIndex = 22;
@@ -385,7 +363,7 @@
             this.btcancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcancelar.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btcancelar.ForeColor = System.Drawing.Color.White;
-            this.btcancelar.Location = new System.Drawing.Point(1222, 151);
+            this.btcancelar.Location = new System.Drawing.Point(1211, 147);
             this.btcancelar.Name = "btcancelar";
             this.btcancelar.Size = new System.Drawing.Size(105, 38);
             this.btcancelar.TabIndex = 21;
@@ -401,7 +379,7 @@
             this.btsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btsalvar.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btsalvar.ForeColor = System.Drawing.Color.White;
-            this.btsalvar.Location = new System.Drawing.Point(1222, 98);
+            this.btsalvar.Location = new System.Drawing.Point(1211, 92);
             this.btsalvar.Name = "btsalvar";
             this.btsalvar.Size = new System.Drawing.Size(105, 38);
             this.btsalvar.TabIndex = 20;
@@ -417,7 +395,7 @@
             this.btinserir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btinserir.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btinserir.ForeColor = System.Drawing.Color.White;
-            this.btinserir.Location = new System.Drawing.Point(1222, 45);
+            this.btinserir.Location = new System.Drawing.Point(1211, 34);
             this.btinserir.Name = "btinserir";
             this.btinserir.Size = new System.Drawing.Size(105, 38);
             this.btinserir.TabIndex = 19;
@@ -427,13 +405,108 @@
             // 
             // btvoltar
             // 
-            this.btvoltar.Location = new System.Drawing.Point(1289, 6);
+            this.btvoltar.BackColor = System.Drawing.Color.Blue;
+            this.btvoltar.FlatAppearance.BorderSize = 0;
+            this.btvoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btvoltar.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btvoltar.ForeColor = System.Drawing.Color.White;
+            this.btvoltar.Location = new System.Drawing.Point(1324, 10);
             this.btvoltar.Name = "btvoltar";
             this.btvoltar.Size = new System.Drawing.Size(30, 23);
             this.btvoltar.TabIndex = 24;
             this.btvoltar.Text = "<";
-            this.btvoltar.UseVisualStyleBackColor = true;
+            this.btvoltar.UseVisualStyleBackColor = false;
             this.btvoltar.Click += new System.EventHandler(this.btvoltar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(45, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 15);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "*";
+            // 
+            // nUM_QUADRALabel
+            // 
+            nUM_QUADRALabel.AutoSize = true;
+            nUM_QUADRALabel.BackColor = System.Drawing.Color.Transparent;
+            nUM_QUADRALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            nUM_QUADRALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nUM_QUADRALabel.ForeColor = System.Drawing.Color.White;
+            nUM_QUADRALabel.Location = new System.Drawing.Point(55, 21);
+            nUM_QUADRALabel.Name = "nUM_QUADRALabel";
+            nUM_QUADRALabel.Size = new System.Drawing.Size(74, 15);
+            nUM_QUADRALabel.TabIndex = 5;
+            nUM_QUADRALabel.Text = "N° quadra:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(45, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(13, 15);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "*";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(45, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(13, 15);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "*";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(174, 131);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 15);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "*";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(45, 182);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(13, 15);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "*";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(174, 182);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(13, 15);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "*";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(45, 239);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(13, 15);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "*";
             // 
             // Frcadquad
             // 
@@ -441,8 +514,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
             this.ClientSize = new System.Drawing.Size(1366, 719);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btvoltar);
-            this.Controls.Add(this.btsair2);
             this.Controls.Add(this.btexcluir);
             this.Controls.Add(this.btcancelar);
             this.Controls.Add(this.btsalvar);
@@ -490,7 +569,6 @@
         private System.Windows.Forms.ComboBox bLOQUEADOComboBox;
         private System.Windows.Forms.DateTimePicker data_cadDateTimePicker;
         private System.Windows.Forms.DataGridView cad_quadraDataGridView;
-        private System.Windows.Forms.Button btsair2;
         private System.Windows.Forms.Button btexcluir;
         private System.Windows.Forms.Button btcancelar;
         private System.Windows.Forms.Button btsalvar;
@@ -504,5 +582,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.Button btvoltar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

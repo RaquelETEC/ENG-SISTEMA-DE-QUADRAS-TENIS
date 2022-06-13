@@ -41,7 +41,6 @@
             this.sENHATextBox = new System.Windows.Forms.TextBox();
             this.fUNCAOComboBox = new System.Windows.Forms.ComboBox();
             this.bLOQUEADOComboBox = new System.Windows.Forms.ComboBox();
-            this.btsair2 = new System.Windows.Forms.Button();
             this.btexcluir = new System.Windows.Forms.Button();
             this.btcancelar = new System.Windows.Forms.Button();
             this.btsalvar = new System.Windows.Forms.Button();
@@ -53,6 +52,10 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btvoltar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             lOGINLabel = new System.Windows.Forms.Label();
             sENHALabel = new System.Windows.Forms.Label();
             fUNCAOLabel = new System.Windows.Forms.Label();
@@ -68,12 +71,12 @@
             lOGINLabel.BackColor = System.Drawing.Color.Transparent;
             lOGINLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             lOGINLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lOGINLabel.ForeColor = System.Drawing.Color.Lime;
-            lOGINLabel.Location = new System.Drawing.Point(39, 36);
+            lOGINLabel.ForeColor = System.Drawing.Color.White;
+            lOGINLabel.Location = new System.Drawing.Point(53, 36);
             lOGINLabel.Name = "lOGINLabel";
-            lOGINLabel.Size = new System.Drawing.Size(57, 15);
+            lOGINLabel.Size = new System.Drawing.Size(51, 15);
             lOGINLabel.TabIndex = 3;
-            lOGINLabel.Text = "*E-mail:";
+            lOGINLabel.Text = "E-mail:";
             // 
             // sENHALabel
             // 
@@ -81,36 +84,36 @@
             sENHALabel.BackColor = System.Drawing.Color.Transparent;
             sENHALabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             sENHALabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            sENHALabel.ForeColor = System.Drawing.Color.Lime;
-            sENHALabel.Location = new System.Drawing.Point(39, 87);
+            sENHALabel.ForeColor = System.Drawing.Color.White;
+            sENHALabel.Location = new System.Drawing.Point(53, 85);
             sENHALabel.Name = "sENHALabel";
-            sENHALabel.Size = new System.Drawing.Size(54, 15);
+            sENHALabel.Size = new System.Drawing.Size(48, 15);
             sENHALabel.TabIndex = 5;
-            sENHALabel.Text = "*Senha:";
+            sENHALabel.Text = "Senha:";
             // 
             // fUNCAOLabel
             // 
             fUNCAOLabel.AutoSize = true;
             fUNCAOLabel.BackColor = System.Drawing.Color.Transparent;
             fUNCAOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            fUNCAOLabel.ForeColor = System.Drawing.Color.Lime;
-            fUNCAOLabel.Location = new System.Drawing.Point(39, 191);
+            fUNCAOLabel.ForeColor = System.Drawing.Color.White;
+            fUNCAOLabel.Location = new System.Drawing.Point(53, 191);
             fUNCAOLabel.Name = "fUNCAOLabel";
-            fUNCAOLabel.Size = new System.Drawing.Size(62, 15);
+            fUNCAOLabel.Size = new System.Drawing.Size(56, 15);
             fUNCAOLabel.TabIndex = 9;
-            fUNCAOLabel.Text = "*Função:";
+            fUNCAOLabel.Text = "Função:";
             // 
             // bLOQUEADOLabel
             // 
             bLOQUEADOLabel.AutoSize = true;
             bLOQUEADOLabel.BackColor = System.Drawing.Color.Transparent;
             bLOQUEADOLabel.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            bLOQUEADOLabel.ForeColor = System.Drawing.Color.Lime;
-            bLOQUEADOLabel.Location = new System.Drawing.Point(39, 138);
+            bLOQUEADOLabel.ForeColor = System.Drawing.Color.White;
+            bLOQUEADOLabel.Location = new System.Drawing.Point(53, 138);
             bLOQUEADOLabel.Name = "bLOQUEADOLabel";
-            bLOQUEADOLabel.Size = new System.Drawing.Size(83, 15);
+            bLOQUEADOLabel.Size = new System.Drawing.Size(77, 15);
             bLOQUEADOLabel.TabIndex = 10;
-            bLOQUEADOLabel.Text = "*Bloqueado:";
+            bLOQUEADOLabel.Text = "Bloqueado:";
             // 
             // sistemaDataSet
             // 
@@ -174,21 +177,6 @@
             this.bLOQUEADOComboBox.Name = "bLOQUEADOComboBox";
             this.bLOQUEADOComboBox.Size = new System.Drawing.Size(121, 21);
             this.bLOQUEADOComboBox.TabIndex = 11;
-            // 
-            // btsair2
-            // 
-            this.btsair2.BackColor = System.Drawing.Color.Red;
-            this.btsair2.FlatAppearance.BorderSize = 0;
-            this.btsair2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btsair2.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btsair2.ForeColor = System.Drawing.Color.White;
-            this.btsair2.Location = new System.Drawing.Point(1309, 5);
-            this.btsair2.Name = "btsair2";
-            this.btsair2.Size = new System.Drawing.Size(28, 23);
-            this.btsair2.TabIndex = 28;
-            this.btsair2.Text = "X";
-            this.btsair2.UseVisualStyleBackColor = false;
-            this.btsair2.Click += new System.EventHandler(this.btsair2_Click);
             // 
             // btexcluir
             // 
@@ -315,13 +303,66 @@
             // 
             // btvoltar
             // 
-            this.btvoltar.Location = new System.Drawing.Point(1271, 5);
+            this.btvoltar.BackColor = System.Drawing.Color.Blue;
+            this.btvoltar.FlatAppearance.BorderSize = 0;
+            this.btvoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btvoltar.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btvoltar.ForeColor = System.Drawing.Color.White;
+            this.btvoltar.Location = new System.Drawing.Point(1313, 10);
             this.btvoltar.Name = "btvoltar";
             this.btvoltar.Size = new System.Drawing.Size(32, 23);
             this.btvoltar.TabIndex = 29;
             this.btvoltar.Text = "<";
-            this.btvoltar.UseVisualStyleBackColor = true;
+            this.btvoltar.UseVisualStyleBackColor = false;
             this.btvoltar.Click += new System.EventHandler(this.btvoltar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(44, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 15);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "*";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(44, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(13, 15);
+            this.label2.TabIndex = 63;
+            this.label2.Text = "*";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Lime;
+            this.label3.Location = new System.Drawing.Point(44, 136);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(13, 15);
+            this.label3.TabIndex = 64;
+            this.label3.Text = "*";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Lime;
+            this.label4.Location = new System.Drawing.Point(44, 191);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 15);
+            this.label4.TabIndex = 65;
+            this.label4.Text = "*";
             // 
             // frusuario
             // 
@@ -329,9 +370,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
             this.ClientSize = new System.Drawing.Size(1357, 647);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btvoltar);
             this.Controls.Add(this.usuarioDataGridView);
-            this.Controls.Add(this.btsair2);
             this.Controls.Add(this.btexcluir);
             this.Controls.Add(this.btcancelar);
             this.Controls.Add(this.btsalvar);
@@ -367,7 +411,6 @@
         private System.Windows.Forms.TextBox sENHATextBox;
         private System.Windows.Forms.ComboBox fUNCAOComboBox;
         private System.Windows.Forms.ComboBox bLOQUEADOComboBox;
-        private System.Windows.Forms.Button btsair2;
         private System.Windows.Forms.Button btexcluir;
         private System.Windows.Forms.Button btcancelar;
         private System.Windows.Forms.Button btsalvar;
@@ -379,5 +422,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Button btvoltar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

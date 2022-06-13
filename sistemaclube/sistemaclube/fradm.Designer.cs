@@ -33,6 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_usuario = new System.Windows.Forms.Button();
+            this.bt_relat = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_quad
@@ -43,7 +46,7 @@
             this.bt_quad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_quad.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_quad.ForeColor = System.Drawing.Color.White;
-            this.bt_quad.Location = new System.Drawing.Point(769, 12);
+            this.bt_quad.Location = new System.Drawing.Point(786, 12);
             this.bt_quad.Name = "bt_quad";
             this.bt_quad.Size = new System.Drawing.Size(165, 37);
             this.bt_quad.TabIndex = 0;
@@ -95,7 +98,7 @@
             this.bt_usuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_usuario.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_usuario.ForeColor = System.Drawing.Color.White;
-            this.bt_usuario.Location = new System.Drawing.Point(954, 12);
+            this.bt_usuario.Location = new System.Drawing.Point(957, 12);
             this.bt_usuario.Name = "bt_usuario";
             this.bt_usuario.Size = new System.Drawing.Size(165, 37);
             this.bt_usuario.TabIndex = 1;
@@ -103,12 +106,39 @@
             this.bt_usuario.UseVisualStyleBackColor = false;
             this.bt_usuario.Click += new System.EventHandler(this.button2_Click);
             // 
+            // bt_relat
+            // 
+            this.bt_relat.BackColor = System.Drawing.Color.Transparent;
+            this.bt_relat.FlatAppearance.BorderSize = 0;
+            this.bt_relat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_relat.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_relat.ForeColor = System.Drawing.Color.White;
+            this.bt_relat.Location = new System.Drawing.Point(1128, 12);
+            this.bt_relat.Name = "bt_relat";
+            this.bt_relat.Size = new System.Drawing.Size(151, 37);
+            this.bt_relat.TabIndex = 10;
+            this.bt_relat.Text = "Relatórios";
+            this.bt_relat.UseVisualStyleBackColor = false;
+            this.bt_relat.Click += new System.EventHandler(this.bt_relat_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sistemaclube.Properties.Resources.LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(1, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // fradm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.clube_4;
             this.ClientSize = new System.Drawing.Size(1291, 703);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.bt_relat);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -118,6 +148,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Clube de tênis";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,5 +161,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bt_usuario;
+        private System.Windows.Forms.Button bt_relat;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

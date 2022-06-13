@@ -38,5 +38,17 @@ namespace sistemaclube
                 controle.formusuario.Focus();
 
         }
+
+        private void bt_relat_Click(object sender, EventArgs e)
+        {
+            if (controle.formrelat == null)
+                controle.formrelat = new relat();
+
+            controle.formrelat.Show();
+            this.Hide();
+            controle.formrelat.Focus();
+
+
+        }
     }
 }

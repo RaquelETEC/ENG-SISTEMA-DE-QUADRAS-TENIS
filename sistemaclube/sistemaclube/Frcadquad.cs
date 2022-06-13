@@ -41,20 +41,12 @@ namespace sistemaclube
 
         private void btsalvar_Click(object sender, EventArgs e)
         {
-            if (nUM_QUADRATextBox.Text == "" || nOME_QUADRATextBox.Text == "" || cOBERTAComboBox.Text == "" ||
-               aRQUIBANCADAComboBox.Text == "" || bANCOComboBox.Text == "" || bLOQUEADOComboBox.Text == "")
-            {
-                MessageBox.Show("Preencha todos os campos!", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-            else
-            {
-                this.Validate();
-                this.cad_quadraBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
-                MessageBox.Show("Cadastro salvo com sucesso!", "Cadastro de quadra", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            this.Validate();
+            this.cad_quadraBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
+            MessageBox.Show("Cadastro salvo com sucesso!", "Cadastro de quadra", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
         private void btcancelar_Click(object sender, EventArgs e)
         {
             this.cad_quadraBindingSource.CancelEdit();
@@ -73,19 +65,6 @@ namespace sistemaclube
         private void btsair2_Click(object sender, EventArgs e)
         {
             Application.Exit();
-
-        }
-
-        private void bt_voltar_Click(object sender, EventArgs e)
-        {
-
-            if (controle.formadm == null)
-            {
-                controle.formadm = new fradm();
-                this.Hide();
-                controle.formadm.Show();
-                controle.formadm.Focus();
-            }
 
         }
 

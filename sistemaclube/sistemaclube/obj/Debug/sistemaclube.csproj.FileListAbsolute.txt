@@ -131,3 +131,4 @@ C:\Users\raque\OneDrive - Fatec Centro Paula Souza\Sistema\SISTEMATESTE\sistemac
 C:\Users\raque\OneDrive - Fatec Centro Paula Souza\Sistema\SISTEMATESTE\sistemaclube\sistemaclube\bin\Debug\System.Buffers.dll
 C:\Users\raque\OneDrive - Fatec Centro Paula Souza\Sistema\SISTEMATESTE\sistemaclube\sistemaclube\bin\Debug\MySql.Data.xml
 C:\Users\raque\OneDrive - Fatec Centro Paula Souza\Sistema\SISTEMATESTE\sistemaclube\sistemaclube\obj\Debug\sistemaclube.csproj.CopyComplete
+C:\Users\biale\OneDrive\Documentos\ProjetosGithub\SISTEMATESTE\sistemaclube\sistemaclube\obj\Debug\sistemaclube.relat.resources

@@ -32,6 +32,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_reserva
@@ -42,7 +44,7 @@
             this.bt_reserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_reserva.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_reserva.ForeColor = System.Drawing.Color.White;
-            this.bt_reserva.Location = new System.Drawing.Point(840, 13);
+            this.bt_reserva.Location = new System.Drawing.Point(1111, 12);
             this.bt_reserva.Name = "bt_reserva";
             this.bt_reserva.Size = new System.Drawing.Size(158, 32);
             this.bt_reserva.TabIndex = 0;
@@ -86,12 +88,23 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "CLUBE";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sistemaclube.Properties.Resources.LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // frzelador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.clube_4;
             this.ClientSize = new System.Drawing.Size(1300, 633);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -100,6 +113,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Clube de tênis";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,5 +125,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
