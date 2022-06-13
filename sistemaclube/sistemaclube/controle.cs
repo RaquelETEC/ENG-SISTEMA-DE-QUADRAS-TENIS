@@ -13,7 +13,6 @@ namespace sistemaclube
         public static Frcadquad formquad { get; set; }
         public static frreserva formreserva { get; set; }
         public static frusuario formusuario { get; set; }
-        public static object Frcadquad { get; internal set; }
        
     }
 

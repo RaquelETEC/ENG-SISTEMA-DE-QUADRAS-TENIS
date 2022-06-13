@@ -16,15 +16,7 @@ namespace sistemaclube
         {
             InitializeComponent();
         }
-
-        private void reservaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.reservaBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
-
-        }
-
+    
         private void frreserva_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'sistemaDataSet.cad_quadra'. Você pode movê-la ou removê-la conforme necessário.
@@ -67,15 +59,15 @@ namespace sistemaclube
             MessageBox.Show("Reserva excluida com sucesso!", "Reserva de quardas", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btvoltar_Click(object sender, EventArgs e)
         {
-            if (controle.formzelador == null)
-            {
+            if (controle.formzelador == null)           
                 controle.formzelador = new frzelador();
-                this.Hide();
+                
                 controle.formzelador.Show();
+                this.Hide();
                 controle.formzelador.Focus();
-            }
+           
         }
     }
 

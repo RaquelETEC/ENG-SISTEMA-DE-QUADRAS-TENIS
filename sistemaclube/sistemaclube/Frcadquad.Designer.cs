@@ -61,6 +61,7 @@
             this.btcancelar = new System.Windows.Forms.Button();
             this.btsalvar = new System.Windows.Forms.Button();
             this.btinserir = new System.Windows.Forms.Button();
+            this.btvoltar = new System.Windows.Forms.Button();
             nUM_QUADRALabel = new System.Windows.Forms.Label();
             nOME_QUADRALabel = new System.Windows.Forms.Label();
             cOBERTALabel = new System.Windows.Forms.Label();
@@ -424,12 +425,23 @@
             this.btinserir.UseVisualStyleBackColor = false;
             this.btinserir.Click += new System.EventHandler(this.btinserir_Click);
             // 
+            // btvoltar
+            // 
+            this.btvoltar.Location = new System.Drawing.Point(1289, 6);
+            this.btvoltar.Name = "btvoltar";
+            this.btvoltar.Size = new System.Drawing.Size(30, 23);
+            this.btvoltar.TabIndex = 24;
+            this.btvoltar.Text = "<";
+            this.btvoltar.UseVisualStyleBackColor = true;
+            this.btvoltar.Click += new System.EventHandler(this.btvoltar_Click);
+            // 
             // Frcadquad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
             this.ClientSize = new System.Drawing.Size(1366, 719);
+            this.Controls.Add(this.btvoltar);
             this.Controls.Add(this.btsair2);
             this.Controls.Add(this.btexcluir);
             this.Controls.Add(this.btcancelar);
@@ -490,5 +502,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.Button btvoltar;
     }
 }

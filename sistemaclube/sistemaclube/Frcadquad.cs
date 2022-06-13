@@ -17,14 +17,6 @@ namespace sistemaclube
             InitializeComponent();
         }
 
-        private void cad_quadraBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.cad_quadraBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.sistemaDataSet);
-
-        }
-
         private void Frcadquad_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'sistemaDataSet.cad_quadra'. Você pode movê-la ou removê-la conforme necessário.
@@ -86,6 +78,17 @@ namespace sistemaclube
                 controle.formadm.Show();
                 controle.formadm.Focus();
             }
+
+        }
+
+        private void btvoltar_Click(object sender, EventArgs e)
+        {
+            if (controle.formadm == null)
+                controle.formadm = new fradm();
+                
+                controle.formadm.Show();
+                this.Hide();
+                controle.formadm.Focus();
 
         }
     }

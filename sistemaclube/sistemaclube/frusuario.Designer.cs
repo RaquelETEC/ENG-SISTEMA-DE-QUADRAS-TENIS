@@ -52,6 +52,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btvoltar = new System.Windows.Forms.Button();
             lOGINLabel = new System.Windows.Forms.Label();
             sENHALabel = new System.Windows.Forms.Label();
             fUNCAOLabel = new System.Windows.Forms.Label();
@@ -312,12 +313,23 @@
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             this.dataGridViewTextBoxColumn5.Width = 220;
             // 
+            // btvoltar
+            // 
+            this.btvoltar.Location = new System.Drawing.Point(1271, 5);
+            this.btvoltar.Name = "btvoltar";
+            this.btvoltar.Size = new System.Drawing.Size(32, 23);
+            this.btvoltar.TabIndex = 29;
+            this.btvoltar.Text = "<";
+            this.btvoltar.UseVisualStyleBackColor = true;
+            this.btvoltar.Click += new System.EventHandler(this.btvoltar_Click);
+            // 
             // frusuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
             this.ClientSize = new System.Drawing.Size(1357, 647);
+            this.Controls.Add(this.btvoltar);
             this.Controls.Add(this.usuarioDataGridView);
             this.Controls.Add(this.btsair2);
             this.Controls.Add(this.btexcluir);
@@ -366,5 +378,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Button btvoltar;
     }
 }

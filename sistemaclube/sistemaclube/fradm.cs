@@ -20,23 +20,23 @@ namespace sistemaclube
         private void bt_quad_Click(object sender, EventArgs e)
         {
             if (controle.formquad == null)
-            {
                 controle.formquad = new Frcadquad();
-                this.Hide();
+                
                 controle.formquad.Show();
+                this.Hide();
                 controle.formquad.Focus();
-            }
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             if (controle.formusuario == null)
-            {
                 controle.formusuario = new frusuario();
-                this.Hide();
+                
                 controle.formusuario.Show();
+                this.Hide();
                 controle.formusuario.Focus();
-            }
+
         }
     }
 }

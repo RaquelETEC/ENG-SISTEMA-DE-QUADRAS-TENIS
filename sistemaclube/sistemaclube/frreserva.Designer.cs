@@ -85,6 +85,7 @@
             this.hORA_FIMComboBox = new System.Windows.Forms.ComboBox();
             this.rpendente = new System.Windows.Forms.RadioButton();
             this.rpago = new System.Windows.Forms.RadioButton();
+            this.btvoltar = new System.Windows.Forms.Button();
             nOME_CLIENTELabel = new System.Windows.Forms.Label();
             cPF_CLIENTELabel = new System.Windows.Forms.Label();
             tELEFONE_CLIENTELabel = new System.Windows.Forms.Label();
@@ -359,7 +360,7 @@
             this.nUM_QUADRAComboBox.Name = "nUM_QUADRAComboBox";
             this.nUM_QUADRAComboBox.Size = new System.Drawing.Size(197, 21);
             this.nUM_QUADRAComboBox.TabIndex = 20;
-            this.nUM_QUADRAComboBox.ValueMember = "ID_QUADRA";
+            this.nUM_QUADRAComboBox.ValueMember = "NUM_QUADRA";
             // 
             // cad_quadraBindingSource1
             // 
@@ -703,12 +704,23 @@
             this.rpago.Text = "Pendente";
             this.rpago.UseVisualStyleBackColor = false;
             // 
+            // btvoltar
+            // 
+            this.btvoltar.Location = new System.Drawing.Point(1267, 9);
+            this.btvoltar.Name = "btvoltar";
+            this.btvoltar.Size = new System.Drawing.Size(37, 23);
+            this.btvoltar.TabIndex = 48;
+            this.btvoltar.Text = "<";
+            this.btvoltar.UseVisualStyleBackColor = true;
+            this.btvoltar.Click += new System.EventHandler(this.btvoltar_Click);
+            // 
             // frreserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::sistemaclube.Properties.Resources.Clube_de_tênis_fundo;
             this.ClientSize = new System.Drawing.Size(1353, 703);
+            this.Controls.Add(this.btvoltar);
             this.Controls.Add(this.rpago);
             this.Controls.Add(this.rpendente);
             this.Controls.Add(hORA_FIMLabel);
@@ -802,5 +814,6 @@
         private System.Windows.Forms.ComboBox hORA_FIMComboBox;
         private System.Windows.Forms.RadioButton rpendente;
         private System.Windows.Forms.RadioButton rpago;
+        private System.Windows.Forms.Button btvoltar;
     }
 }

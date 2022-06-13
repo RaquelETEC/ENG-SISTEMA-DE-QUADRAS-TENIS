@@ -65,15 +65,16 @@ namespace sistemaclube
             Application.Exit();
         }
 
-        private void bt_voltar_Click(object sender, EventArgs e)
+
+        private void btvoltar_Click(object sender, EventArgs e)
         {
             if (controle.formadm == null)
-            {
                 controle.formadm = new fradm();
-                this.Hide();
+
                 controle.formadm.Show();
-               
-            }
+                this.Hide();
+                controle.formadm.Focus();
+
         }
     }
 }
