@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5683D38B-D8A6-4967-BBA4-681B7F245273}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>sistemaclube</RootNamespace>
+    <AssemblyName>sistemaclube</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604" />
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="autentificacao.cs" />
+    <Compile Include="ChamarForms.cs" />
+    <Compile Include="controle.cs" />
+    <Compile Include="fradm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fradm.Designer.cs">
+      <DependentUpon>fradm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frcadquad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frcadquad.Designer.cs">
+      <DependentUpon>Frcadquad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frreserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frreserva.Designer.cs">
+      <DependentUpon>frreserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frusuario.Designer.cs">
+      <DependentUpon>frusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frzelador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frzelador.Designer.cs">
+      <DependentUpon>frzelador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frlogin.Designer.cs">
+      <DependentUpon>frlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sistemaDataSet.cs">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sistemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="fradm.resx">
+      <DependentUpon>fradm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frcadquad.resx">
+      <DependentUpon>Frcadquad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frlogin.resx">
+      <DependentUpon>frlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frreserva.resx">
+      <DependentUpon>frreserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frusuario.resx">
+      <DependentUpon>frusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frzelador.resx">
+      <DependentUpon>frzelador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sistemaDataSet.xsc">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemaDataSet.xss">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clube 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clube de tênis fundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clube de tênis fundo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clube de tênis fundo %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clube de tênis fundo %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clube de tênis fundo %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clube de tênis fundo 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
